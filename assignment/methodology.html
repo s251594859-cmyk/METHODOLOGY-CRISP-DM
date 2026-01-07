@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>IMC11203 - INTRODUCTION TO COMPUTER & DATA SCIENCE</h1>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="methodology.html">Methodology</a>
+<a href="case-study.html">Case Study</a>
+<a href="visuals.html">Visuals</a>
+<a href="references.html">References</a>
+<a href="about.html">About</a>
+</nav>
+<section>
+<h2>CRISP-DM METHODOLOGY</h2>
+<div class="section-nav">
+<ul>
+  <li><a href="#definition">Definition</a></li>
+  <li><a href="#strength">CRISP-DM Strengths</a></li>
+  <li><a href="#weakness">CRISP-DM Weaknesses</a></li>
+</ul>
+</div>
+<div class="info-box">
+    <h3 id="definition">DEFINITION</h3>
+    <p>
+      <span class="highlight">CRISP-DM</span> is a structured data science methodology
+      used to guide data-driven problem solving.
+    </p>
+  </div>
+<ol>
+  <b><li>Overview</li></b>
+  <p>The CRISP-DM methodology is described in terms of a hierarchical process model, comprising four levels of abstraction (from general to specific).</p>
+  <figure>
+  <img src="level of crisp-dm.jpg" alt="Level CRISP-DM" class="image">
+  <figcaption style="text-align:center;">
+    Figure 1: Hierarchical Process Model of the CRISP-DM
+  </figcaption>
+</figure>
+<ul>
+  <li><p><b>Top Level:</b><br>
+    The data mining process is organized into a small phases.</p></li>
+  <li><p><b>Second Level (Generic):</b><br>
+    Intended to be general enough to cover all possible data mining situation. This level are designed to be as complete and stable as possible.</p></li>
+  <li><p><b>Third Level (Specialized Task):</b><br>
+    The place to describe how actions in the generic tasks should be carried out in specific situations. A task called response model at this level which contains activities specific to the problem and to the data mining tool chosen.</p></li>
+  <li><p><b>Fourth Level (Proses Instance):</b><br>
+    A record of actions, decisions, and result of an actual data mining engagement. For this level, it is organized according to the tasks defined at the higher levels, but represents what actually happended in a particular engagement, rather than what happends in general.</p></li>
+</ul>
+  <b><li>Key Phases of CRISP-DM</li></b>
+  <p>The CRISP-DM is composed of six interconnected phases that guided the entire lifecycle of a data science project. Incorporating Knowledge Intelligence (KI) into each phase enchances its effectiveness:</p>
+  <figure>
+  <img src="sixphases.png" alt="Phases CRISP-DM" class="image">
+  <figcaption style="text-align:center;">
+    Figure 2: Phases of the CRISP-DM
+  </figcaption>
+</figure>
+<ul>
+  <li><p><b>Business Understanding:</b><br>
+    This phase focuses on understanding the business objectives and requirements, setting the groundwork for all subsequent phases by defining the problem and identifying what success looks like. By embedding expert knowledge nd business context through KI, teams can align data science goals with organizational objectives more effictively.</p></li>
+  <li><p><b>Data Understanding:</b><br>
+    Gather, explore, and evaluate the data ath this phase to ensure it is suitable for the project. KI plays a key role by enabling the consolidation of knowledge from diverse organizational structures, including unstructured and semi-structured data.</p></li>
+  <li><p><b>Data Preparation:</b><br>
+    Once the data is understood, this phase involves transforming and cleaning it to make it ready for modelling. Tasks such as handling missing values, normalizing data, and feature enginerring are critical at this stage. KI support this phase by incorporating business rules, industry insights, and expert feedback into the data transformation process. Moreover, an embedded feedback loop helps continually refine data accurancy and ensures the data is optimally prepared for feature engineering. Expert input can also be leveraged to accurately label training data, further enchancing model realibility. This robust preparation minimizes potential issues duriing analysis and ensures the dataset is well-suited for the modelling phase.</p></li>
+  <li><p><b>Modelling:</b><br>
+    For this phase, various machine learning algorithms to the prepared data in order applied to create models that address the business problem. KI can guide feature selection and algorithm choices by leveraging feedback loops to guide optimal algorithm and feature selection into the modelling process. By carefully selecting and refining the models with KI measures, teams ensure that the final solution can provide meaningful insights and meet business goals.</p></li>
+  <li><p><b>Evaluation:</b><br>
+    The model in this phase is rigorously tested to ensure it meets the business objectives and delivers accurate result. Here, KI introduces an evaluation criteria by integrating real-time business insights and performance metrics. This iterative process not only guarantees technical robustness but also ensures that the model remains closely algined with the business goals before deployment.</p></li>
+  <li><p><b>Deployment:</b><br>
+    In the final phase, the model is integrated into the business enviroment, making it avaiable for use in real-world applications. This phase may involve integrating the model into existing systems, creating user interfaces, or automating workflows based on the model's predictions. Importantly, the outputs from the deployed solution are channeled back into knowledge intelligence initiatives-such as sematic layers or Retrieval-Augmented Generation (RAG) systems-to continously refine and enchance earlier stages of the CRISP-DM process. Continous monitoring ensures that the model remains accurate and relevant as business conditions and data evolve, creating a dynamic feedback loop where CRISP-DM informs KI, and KI, in turn enchances future deployments.</p></li>
+</ul>
+</ol>
+<h3 id="strength">CRISP-DM STRENGTHS</h3>
+<ul>
+  <li><p>The data mining process must be reliable and repeatable by people with little data mining skill.</li></p>
+  <li>CRISP-DM provides a uniform framework for:</li>
+  <ul>
+    <li>Data mining guidelines</li>
+    <li>Documentation of data mining experiences</li><br>
+  </ul>
+  <li>CRISP-DM is flexible to account for differences:</li>
+  <ul>
+    <li>Different business problems</li>
+    <li>Different goals</li>
+    <li>Different data</li>
+  </ul>
+</ul>
+<h3 id="weakness">CRISP-DM WEAKNESSES</h3>
+<ul>
+  <li>Provides a waterfall framework unless vertical slicing.</li>
+  <li>Does not cover deployment in newer enviroments</li>
+  <li>Does not cover the application scenario where an ML model is maintained as an application</li>
+  <li>Lacks guidance on quality assurance methodology</li>
+</ul>
+</section>
+<footer>
+<p>&copy; 2026 Assignment IMC11203</p>
+</footer>
+</body>
+</html>
